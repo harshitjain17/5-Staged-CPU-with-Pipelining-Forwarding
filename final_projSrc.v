@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
-module datapath (clk, pc, nextPc, dinstOut, ewreg, em2reg, ewmem, ealuc, ealuimm, edestReg, eqa, eqb, eimm32, mwreg, mm2reg, mwmem,
-mdestReg, mr, mqb, wwreg, wm2reg, wdestReg, wr, wdo);
+module datapath (clk, pc, nextPc, dinstOut, ewreg, em2reg, ewmem, ealuc, ealuimm, edestReg, eqa, eqb, eimm32, mwreg, mm2reg, mwmem, mdestReg, mr, mqb, wwreg, wm2reg, wdestReg, wr, wdo);
     
     input clk;
     
