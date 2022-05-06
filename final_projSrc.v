@@ -252,7 +252,7 @@ module control_unit (op, func, rs, rt, mdestReg, mm2reg, mwreg, edestReg, em2reg
     end
 endmodule
 
-//MULTIPLER 1 (REGRT MULTIPLEXER)
+//MULTIPLEXER 1 (REGRT MULTIPLEXER)
 module regrt_multiplexer (rd, rt, regrt, destReg);
     input [4:0] rd;
     input [4:0] rt;
@@ -345,9 +345,6 @@ fqa, fqb, imm32, ewreg, em2reg, ewmem, ealuc, ealuimm, edestReg, eqa, eqb, eimm3
         eimm32 <= imm32;
     end 
 endmodule
-
-
-//LAB 4
 
 //MULTIPLEXER 2 (ALU MULTIPLEXER)
 module AluMux (eqb, eimm32, ealuimm, b);
@@ -476,9 +473,6 @@ module memwb_pipeline_register (clk, mwreg, mm2reg, mdestReg, mr, mdo, wwreg, wm
     
 endmodule
 
-
-//LAB 5
-
 // MULTIPLEXER 3 (WRITEBACK MULTIPLEXER)
 module WbMux (wr, wdo, wm2reg, wbData);
         input [31:0] wr;
@@ -495,8 +489,6 @@ module WbMux (wr, wdo, wm2reg, wbData);
             end
         end
 endmodule
-
-// Final Project Implementation
 
 //MULTIPLEXER 4
 module mux4 (qa, r, mr, mdo, fwda, fqa);
@@ -522,7 +514,6 @@ module mux4 (qa, r, mr, mdo, fwda, fqa);
         end
     end
 endmodule
-
 
 //MULTIPLEXER 5
 module mux5 (qb, r, mr, mdo, fwdb, fqb);
